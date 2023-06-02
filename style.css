@@ -1,5 +1,8 @@
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: grid;
+  grid-template-columns: [left] 1fr [middle] 2fr [right] 1fr;
+  grid-template-rows: [top] 1fr [middle] 1fr [bottom] 1fr;
 }
 
 body.dark{
@@ -7,21 +10,43 @@ body.dark{
   color:aliceblue;
 }
 
-.middle-grid{
-  position: relative;
+.middle-top {
+  grid-column: middle;
+  grid-row: top;
 }
 
-.left-grid{
-  position: relative;
+.middle-middle{
+  grid-column: middle;
+  grid-row: middle;
+}
+
+.middle-bottom{
+  grid-column: middle;
+  grid-row: bottom;
+}
+
+.left-top{
+  grid-row: top;
+}
+
+.left-middle{
+  grid-row: middle;
+}
+
+.left-bottom{
+  grid-row: bottom;
 }
 
 .right-grid{
-  position: relative;
+  grid-column: right;
 }
+
 .text-display{
-  position: relative;
+  color:gray;
 }
 
 .button{
-  position: relative;
+  margin: 2px;
+  border: white;
+
 }
