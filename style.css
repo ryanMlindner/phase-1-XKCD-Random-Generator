@@ -1,0 +1,27 @@
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body.dark{
+  background-color: #111111;
+  color:aliceblue;
+}
+
+.middle-grid{
+  position: relative;
+}
+
+.left-grid{
+  position: relative;
+}
+
+.right-grid{
+  position: relative;
+}
+.text-display{
+  position: relative;
+}
+
+.button{
+  position: relative;
+}
