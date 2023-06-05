@@ -1,8 +1,8 @@
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: grid;
-  grid-template-columns: [left] 1fr [middle] 2fr [right] 1fr;
-  grid-template-rows: [top] 1fr [middle] 1fr [bottom] 1fr;
+  grid-template-columns: [left] 1fr [middle] 3fr [right] 1fr;
+  grid-template-rows: [top] 1fr [middle] 3fr [bottom] 2fr;
 }
 
 body.dark{
