@@ -1,5 +1,9 @@
 # phase-1-XKCD-Random-Generator
 
+# Runtime instructions:
+ - install json-server
+ - $ json-server --watch db.json
+
 # Project Pitch:
 A bare bones API to fetch an xkcd comic of the users choice, or a random one. The website shows
 the comic, details about the comic, and provides a form to submit comments or like the comic, and displays
