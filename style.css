@@ -10,19 +10,32 @@ body.dark{
   color:aliceblue;
 }
 
-.middle-top {
+.middle-top{
   grid-column: middle;
   grid-row: top;
+  margin: auto;
+  width: 50%;
 }
 
 .middle-middle{
   grid-column: middle;
   grid-row: middle;
+  margin: auto;
+  width: 50%;
 }
 
 .middle-bottom{
+  display: flex;
   grid-column: middle;
   grid-row: bottom;
+  margin: auto;
+  width: 50%;
+}
+
+.middle-bottom.floats{
+  flex: 1;
+  margin: auto;
+  width: 50%;
 }
 
 .left-top{
@@ -46,7 +59,5 @@ body.dark{
 }
 
 .button{
-  margin: 2px;
-  border: white;
-
+  padding: 10px;
 }
