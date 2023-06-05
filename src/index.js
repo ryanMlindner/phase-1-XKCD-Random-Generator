@@ -12,3 +12,22 @@ async function fetchComic(comicNumber) {
 }
 fetchComic()
 
+//user profile form
+const form = document.getElementById("form");
+form.addEventListener("submit", formUpdateUI);
+
+function formUpdateUI(event) {
+  event.preventDefault();
+  const formData = event.target;
+  const nameDisplay = document.getElementById("usernameDisplay");
+  const picDisplay = document.getElementById("profilePic");
+  nameDisplay.innerText = formData.username.value;
+  picDisplay.src = formData.profileURL.value;
+}
+
+//light/dark mode toggle aka flashbang yourself for fun
+document.getElementById("modeToggle").addEventListener("click", toggleDarkMode);
+
+function toggleDarkMode() {
+  document.body.classList.toggle("dark");
+}
