@@ -10,7 +10,7 @@
 </head>
 
 <body class="dark">
-  
+
   <!-- middle column of display, title, above comic, comic, below comic -->
   <div class="middle-top">
     <h1 id="title">The not XKCD XKCD website</h1>
@@ -55,16 +55,17 @@
   
   <div class="left-bottom">
     <div class="user-profile">
-      <img id="profilePic">
+      <img id="profilePic" width="80" height="80">
       <h4 id="usernameDisplay">Definitely Not Quentin</h4>
     </div>
     <div class="form-input">
-      <form>
+      <form id="form">
         <h5>Customize your user experience with a fake sign-in!</h5>
         <label for="username">Username: </label>
         <input type="text" name="username" id="username" />
         <label for="profileURL">Link to profile pic:</label>
         <input type="text" name="profileURL" id="profileURL" />
+        <input type="submit" value="Sign In"/>
       </form>
     </div>
   </div>
