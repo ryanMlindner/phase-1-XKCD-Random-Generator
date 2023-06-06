@@ -3,20 +3,11 @@ const comicjson='info.0.json'
 
 const localDBAPI = 'http://localhost:3000/comics'
 let comicArray = [];
+let currentComicID = 0;
 
 function documentMap(name) {
   return document.getElementById(name);
 }
-
-async function fetchComic(comicNumber) {
-    const urlPath=comicNumber!=undefined?
-        comicsAPI+"/"+comicNumber+"/"+comicjson:
-        comicsAPI+"/"+comicjson
-    let res=await fetch(urlPath)
-    let data=await res.json()
-    console.log(data)
-}
-fetchComic()
 
 //fetch from db.json locally
 fetch(localDBAPI)
@@ -62,9 +53,9 @@ function displayCollection() {
 function addComicToList(comic) {
   const comicCollection = documentMap("comicCollection");
   const comicListing = document.createElement("li");
-  comicListing.innerText = comic.num;
   comicCollection.append(comicListing);
-  comicListing.addEventListener("click", () => {loadComic(comic);})
+  comicListing.addEventListener("click", () => {loadComic(comic)});
+  comicListing.innerText = comic.title;
 }
 
 //loads comic data to display at various parts of screen
@@ -82,7 +73,8 @@ function loadComic(comic) {
   likesDisplay.innerText = comic.likes;//TODO create in db
 
   if (comic.transcript !== ""){
-    transcriptDisplay.innerText = comic.transcript;
+    transcriptDisplay.innerText = comic.transcript.slice(0,120) + "...";//fits display perfectly
+    //on my monitor...
   }
   else {transcriptDisplay.innerText = "no transcript for this comic";}
 
@@ -93,4 +85,15 @@ function loadComic(comic) {
   //create element for each metadata item other than alt
   metadataContainer.innerHTML = '';//erase previous list
   metadataContainer.append(altDisplay);
+  currentComicID = comic.num;
+}
+
+//like button
+//TODO add limiting functionality(cant like more than once per load?)
+const likeButton = documentMap("likeButton");
+likeButton.addEventListener("click", updateLikes);
+function updateLikes(){
+  const comic = comicArray.find(comic => comic.num === currentComicID);
+  comic.likes++;
+  //TODO persist with fetch
 }
