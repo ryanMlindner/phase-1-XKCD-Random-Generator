@@ -39,6 +39,7 @@ function formUpdateUI(event) {
   const picDisplay = documentMap("profilePic");
   nameDisplay.innerText = formData.username.value;
   picDisplay.src = formData.profileURL.value;
+  form.reset();
 }
 
 //light/dark mode toggle aka flashbang yourself for fun
