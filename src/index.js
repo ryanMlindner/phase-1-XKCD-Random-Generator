@@ -25,7 +25,6 @@ fetch(localDBAPI)
 function generateLikes(comic) {
   comic.likes = Math.floor(Math.random()*20);
   //this means that the likes will be randomly overwritten every time we load the page
-  //unsure if this is good or not
 }
 
 //user profile form
@@ -39,6 +38,7 @@ function formUpdateUI(event) {
   const picDisplay = documentMap("profilePic");
   nameDisplay.innerText = formData.username.value;
   picDisplay.src = formData.profileURL.value;
+  form.reset();
 }
 
 //light/dark mode toggle aka flashbang yourself for fun
@@ -96,17 +96,12 @@ function loadComic(comic) {
 
   const altDisplay = document.createElement("li");
   altDisplay.innerText = comic.alt;
-  //TODO: create metadata list when comic is loaded, attach
-  //create element for each metadata item other than alt
-  //metadata includes times loaded this session,
-  //TODO think of more?
   metadataContainer.innerHTML = '';//erase previous list
   metadataContainer.append(altDisplay);
   currentComicID = comic.num;
 }
 
 //like button
-//TODO add limiting functionality(cant like more than once per load?)
 const likeButton = documentMap("likeButton");
 likeButton.addEventListener("click", updateLikes);
 function updateLikes(){
@@ -126,9 +121,4 @@ function updateLikes(){
   .then(json => {
     console.log(json);
   })
-}
-
-//helper function to refresh each comic with likes added in the database
-function populateDatabase() {
-  //TODO post array?
 }
