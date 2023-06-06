@@ -1,6 +1,7 @@
 {
   "comics": [
     {
+      "id": 1,
       "month": "6",
       "num": 2784,
       "link": "",
@@ -11,9 +12,11 @@
       "alt": "After a pail of water was thrown on the Wicked Witch of the West outside Salt Lake City, Utah's Great Salt Lake was measured to be 7 parts per trillion witch by volume.",
       "img": "https://imgs.xkcd.com/comics/drainage_basins.png",
       "title": "Drainage Basins",
-      "day": "2"
+      "day": "2",
+      "likes": 25
     },
     {
+      "id": 2,
       "month": "3",
       "num": 714,
       "link": "",
@@ -24,7 +27,8 @@
       "alt": "Yes, there are a lot of longing looks across the bridge of Galactica first, but that's beside the point!",
       "img": "https://imgs.xkcd.com/comics/porn_for_women.png",
       "title": "Porn For Women",
-      "day": "15"
+      "day": "15",
+      "likes": 1
     }
   ]
 }

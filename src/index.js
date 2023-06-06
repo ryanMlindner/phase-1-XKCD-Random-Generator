@@ -1,7 +1,9 @@
-const comicsAPI='https://xkcd.com'
-const comicjson='info.0.json'
-
 const localDBAPI = 'http://localhost:3000/comics'
+const headers = {
+  Accept: 'application/json',
+  'Content-type': 'application/json',
+}
+
 let comicArray = [];
 let currentComicID = 0;
 
@@ -14,9 +16,17 @@ fetch(localDBAPI)
   .then(res => res.json())
   .then(data => {
     data.forEach(addToArray);
+    comicArray.forEach(generateLikes);
     displayCollection();
     loadComic(comicArray[0]);
   })
+
+//like generation
+function generateLikes(comic) {
+  comic.likes = Math.floor(Math.random()*20);
+  //this means that the likes will be randomly overwritten every time we load the page
+  //unsure if this is good or not
+}
 
 //user profile form
 const form = documentMap("form");
@@ -58,6 +68,13 @@ function addComicToList(comic) {
   comicListing.innerText = comic.title;
 }
 
+//random access button
+documentMap("random").addEventListener("click", getRandomComic);
+function getRandomComic() {
+  const randNum = Math.floor(Math.random()*(comicArray.length));
+  loadComic(comicArray[randNum]);
+}
+
 //loads comic data to display at various parts of screen
 function loadComic(comic) {
   const nameDisplay = documentMap("name");
@@ -66,12 +83,11 @@ function loadComic(comic) {
   const detailsDisplay = documentMap("comicDetails");
   const likesDisplay = documentMap("comicLikes");
   const transcriptDisplay = documentMap("comicTranscript");
+
   nameDisplay.innerText = comic.safe_title;
   imgDisplay.src = comic.img;
-  
   detailsDisplay.innerText = `published ${comic.month}/${comic.year}`;
-  likesDisplay.innerText = comic.likes;//TODO create in db
-
+  likesDisplay.innerText = comic.likes;
   if (comic.transcript !== ""){
     transcriptDisplay.innerText = comic.transcript.slice(0,120) + "...";//fits display perfectly
     //on my monitor...
@@ -80,9 +96,10 @@ function loadComic(comic) {
 
   const altDisplay = document.createElement("li");
   altDisplay.innerText = comic.alt;
-  //TODO:
-  //create metadata list when comic is loaded, attach
+  //TODO: create metadata list when comic is loaded, attach
   //create element for each metadata item other than alt
+  //metadata includes times loaded this session,
+  //TODO think of more?
   metadataContainer.innerHTML = '';//erase previous list
   metadataContainer.append(altDisplay);
   currentComicID = comic.num;
@@ -94,6 +111,24 @@ const likeButton = documentMap("likeButton");
 likeButton.addEventListener("click", updateLikes);
 function updateLikes(){
   const comic = comicArray.find(comic => comic.num === currentComicID);
+  const index = comicArray.indexOf(comic) + 1;
   comic.likes++;
-  //TODO persist with fetch
+  documentMap("comicLikes").innerText = comic.likes;
+  //post will look v similar
+  fetch(`${localDBAPI}/${index}`, {
+    headers,
+    method: "PATCH",
+    body: JSON.stringify({
+      likes: comic.likes
+    })
+  })
+  .then(res => res.json())
+  .then(json => {
+    console.log(json);
+  })
+}
+
+//helper function to refresh each comic with likes added in the database
+function populateDatabase() {
+  //TODO post array?
 }
