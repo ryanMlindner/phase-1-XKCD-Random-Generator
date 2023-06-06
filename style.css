@@ -1,8 +1,8 @@
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: grid;
-  grid-template-columns: [left] 1fr [middle] 3fr [right] 1fr;
-  grid-template-rows: [top] 1fr [middle] 3fr [bottom] 2fr;
+  grid-template-columns: [left] 400px [middle] 1fr [right] 500px;
+  grid-template-rows: [top] 200px [middle] 1fr [bottom] 500px;
 }
 
 body.dark{
@@ -40,10 +40,14 @@ body.dark{
 
 .left-top{
   grid-row: top;
+  margin: auto;
+  width: 100%;
 }
 
 .left-middle{
   grid-row: middle;
+  margin: auto;
+  width: 100%;
 }
 
 .left-bottom{
@@ -52,6 +56,8 @@ body.dark{
 
 .right-grid{
   grid-column: right;
+  margin: auto;
+  width: 100%;
 }
 
 .text-display{
