@@ -16,7 +16,7 @@ fetch(localDBAPI)
   .then(res => res.json())
   .then(data => {
     data.forEach(addToArray);
-    comicArray.forEach(generateLikes);
+    //comicArray.forEach(generateLikes);
     displayCollection();
     loadComic(comicArray[0]);
   })
@@ -24,7 +24,7 @@ fetch(localDBAPI)
 //like generation
 function generateLikes(comic) {
   comic.likes = Math.floor(Math.random()*20);
-  //this means that the likes will be randomly overwritten every time we load the page
+  //leaving in in case something happens, only had to run once
 }
 
 //user profile form
@@ -109,7 +109,6 @@ function updateLikes(){
   const index = comicArray.indexOf(comic) + 1;
   comic.likes++;
   documentMap("comicLikes").innerText = comic.likes;
-  //post will look v similar
   fetch(`${localDBAPI}/${index}`, {
     headers,
     method: "PATCH",

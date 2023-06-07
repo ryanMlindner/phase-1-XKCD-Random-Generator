@@ -1,6 +1,7 @@
 {
   "comics": [
     {
+      "id": 1,
       "month": "1",
       "num": 1,
       "link": "",
@@ -11,9 +12,11 @@
       "alt": "Don't we all.",
       "img": "https://imgs.xkcd.com/comics/barrel_cropped_(1).jpg",
       "title": "Barrel - Part 1",
-      "day": "1"
+      "day": "1",
+      "likes": 17
     },
     {
+      "id": 2,
       "month": "1",
       "num": 2,
       "link": "",
@@ -24,9 +27,11 @@
       "alt": "'Petit' being a reference to Le Petit Prince, which I only thought about halfway through the sketch",
       "img": "https://imgs.xkcd.com/comics/tree_cropped_(1).jpg",
       "title": "Petit Trees (sketch)",
-      "day": "1"
+      "day": "1",
+      "likes": 2
     },
     {
+      "id": 3,
       "month": "1",
       "num": 3,
       "link": "",
@@ -37,9 +42,11 @@
       "alt": "Hello, island",
       "img": "https://imgs.xkcd.com/comics/island_color.jpg",
       "title": "Island (sketch)",
-      "day": "1"
+      "day": "1",
+      "likes": 12
     },
     {
+      "id": 4,
       "month": "1",
       "num": 4,
       "link": "",
@@ -50,9 +57,11 @@
       "alt": "There's a river flowing through the ocean",
       "img": "https://imgs.xkcd.com/comics/landscape_cropped_(1).jpg",
       "title": "Landscape (sketch)",
-      "day": "1"
+      "day": "1",
+      "likes": 3
     },
     {
+      "id": 5,
       "month": "1",
       "num": 5,
       "link": "",
@@ -63,9 +72,11 @@
       "alt": "Blown into prime factors",
       "img": "https://imgs.xkcd.com/comics/blownapart_color.jpg",
       "title": "Blown apart",
-      "day": "1"
+      "day": "1",
+      "likes": 14
     },
     {
+      "id": 6,
       "month": "1",
       "num": 6,
       "link": "",
@@ -76,9 +87,11 @@
       "alt": "It's commonly known that too much perspective can be a downer.",
       "img": "https://imgs.xkcd.com/comics/irony_color.jpg",
       "title": "Irony",
-      "day": "1"
+      "day": "1",
+      "likes": 19
     },
     {
+      "id": 7,
       "month": "1",
       "num": 7,
       "link": "",
@@ -89,9 +102,11 @@
       "alt": "I don't remember her name at all, but she fell asleep on the floor in front of me.",
       "img": "https://imgs.xkcd.com/comics/girl_sleeping_noline_(1).jpg",
       "title": "Girl sleeping (Sketch -- 11th grade Spanish class)",
-      "day": "1"
+      "day": "1",
+      "likes": 13
     },
     {
+      "id": 8,
       "month": "1",
       "num": 8,
       "link": "",
@@ -102,9 +117,11 @@
       "alt": "They are six-legged spiders",
       "img": "https://imgs.xkcd.com/comics/red_spiders_small.jpg",
       "title": "Red spiders",
-      "day": "1"
+      "day": "1",
+      "likes": 4
     },
     {
+      "id": 9,
       "month": "1",
       "num": 9,
       "link": "",
@@ -115,9 +132,11 @@
       "alt": "Mal, Simon, Wash, Zoe, River, Kaylee, Jayne, Inara, Book.",
       "img": "https://imgs.xkcd.com/comics/firefly.jpg",
       "title": "Serenity is coming out tomorrow",
-      "day": "1"
+      "day": "1",
+      "likes": 10
     },
     {
+      "id": 10,
       "month": "1",
       "num": 10,
       "link": "",
@@ -128,9 +147,11 @@
       "alt": "My most famous drawing, and one of the first I did for the site",
       "img": "https://imgs.xkcd.com/comics/pi.jpg",
       "title": "Pi Equals",
-      "day": "1"
+      "day": "1",
+      "likes": 12
     },
     {
+      "id": 11,
       "month": "1",
       "num": 11,
       "link": "",
@@ -141,9 +162,11 @@
       "alt": "Awww.",
       "img": "https://imgs.xkcd.com/comics/barrel_mommies.jpg",
       "title": "Barrel - Part 2",
-      "day": "1"
+      "day": "1",
+      "likes": 9
     },
     {
+      "id": 12,
       "month": "1",
       "num": 12,
       "link": "",
@@ -154,9 +177,11 @@
       "alt": "Poisson distributions have no value over negative numbers",
       "img": "https://imgs.xkcd.com/comics/poisson.jpg",
       "title": "Poisson",
-      "day": "1"
+      "day": "1",
+      "likes": 6
     },
     {
+      "id": 13,
       "month": "1",
       "num": 13,
       "link": "",
@@ -167,9 +192,11 @@
       "alt": "They're standing at the lip of the canyon, which isn't clear at all.",
       "img": "https://imgs.xkcd.com/comics/canyon_small.jpg",
       "title": "Canyon",
-      "day": "1"
+      "day": "1",
+      "likes": 11
     },
     {
+      "id": 14,
       "month": "1",
       "num": 14,
       "link": "",
@@ -180,9 +207,11 @@
       "alt": "After reading Slashdot and BoingBoing, sometimes I have to go outside.",
       "img": "https://imgs.xkcd.com/comics/copyright.jpg",
       "title": "Copyright",
-      "day": "1"
+      "day": "1",
+      "likes": 14
     },
     {
+      "id": 15,
       "month": "1",
       "num": 15,
       "link": "",
@@ -193,9 +222,11 @@
       "alt": "Just thought you should know",
       "img": "https://imgs.xkcd.com/comics/just_alerting_you.jpg",
       "title": "Just Alerting You",
-      "day": "1"
+      "day": "1",
+      "likes": 11
     },
     {
+      "id": 16,
       "month": "1",
       "num": 16,
       "link": "",
@@ -206,9 +237,11 @@
       "alt": "I went to a dinner where there was a full 10 minutes of Holy Grail quotes exchanged, with no context, in lieu of conversation.  It depressed me badly.",
       "img": "https://imgs.xkcd.com/comics/monty_python.jpg",
       "title": "Monty Python -- Enough",
-      "day": "1"
+      "day": "1",
+      "likes": 10
     },
     {
+      "id": 17,
       "month": "1",
       "num": 17,
       "link": "",
@@ -219,9 +252,11 @@
       "alt": "I once made an anniversary card for my then-girlfriend with this layout.",
       "img": "https://imgs.xkcd.com/comics/what_if.jpg",
       "title": "What If",
-      "day": "1"
+      "day": "1",
+      "likes": 2
     },
     {
+      "id": 18,
       "month": "1",
       "num": 18,
       "link": "",
@@ -232,9 +267,11 @@
       "alt": "Sn = tin",
       "img": "https://imgs.xkcd.com/comics/snapple.jpg",
       "title": "Snapple",
-      "day": "1"
+      "day": "1",
+      "likes": 7
     },
     {
+      "id": 19,
       "month": "1",
       "num": 19,
       "link": "",
@@ -245,9 +282,11 @@
       "alt": "I still wish it were true.",
       "img": "https://imgs.xkcd.com/comics/george_clinton.jpg",
       "title": "George Clinton",
-      "day": "1"
+      "day": "1",
+      "likes": 16
     },
     {
+      "id": 20,
       "month": "1",
       "num": 20,
       "link": "",
@@ -258,9 +297,11 @@
       "alt": "My brother had a ferret he loved which died since I drew this strip.  RIP.",
       "img": "https://imgs.xkcd.com/comics/ferret.jpg",
       "title": "Ferret",
-      "day": "1"
+      "day": "1",
+      "likes": 7
     },
     {
+      "id": 21,
       "month": "1",
       "num": 21,
       "link": "",
@@ -271,9 +312,11 @@
       "alt": "Science joke.  You should probably just move along.",
       "img": "https://imgs.xkcd.com/comics/kepler.jpg",
       "title": "Kepler",
-      "day": "1"
+      "day": "1",
+      "likes": 16
     },
     {
+      "id": 22,
       "month": "1",
       "num": 22,
       "link": "",
@@ -284,9 +327,11 @@
       "alt": "A whirlpool!",
       "img": "https://imgs.xkcd.com/comics/barrel_whirlpool.jpg",
       "title": "Barrel - Part 3",
-      "day": "1"
+      "day": "1",
+      "likes": 6
     },
     {
+      "id": 23,
       "month": "1",
       "num": 23,
       "link": "",
@@ -297,9 +342,11 @@
       "alt": "It's depressing how many of these are real shirts",
       "img": "https://imgs.xkcd.com/comics/t-shirts.jpg",
       "title": "T-shirts",
-      "day": "1"
+      "day": "1",
+      "likes": 1
     },
     {
+      "id": 24,
       "month": "1",
       "num": 24,
       "link": "",
@@ -310,9 +357,11 @@
       "alt": "I love the idea here, though of course it's not a great-quality drawing or scan.",
       "img": "https://imgs.xkcd.com/comics/godel_escher_kurthalsey.jpg",
       "title": "Godel, Escher, Kurt Halsey",
-      "day": "1"
+      "day": "1",
+      "likes": 13
     },
     {
+      "id": 25,
       "month": "1",
       "num": 25,
       "link": "",
@@ -323,9 +372,11 @@
       "alt": ":(",
       "img": "https://imgs.xkcd.com/comics/barrel_part_4.jpg",
       "title": "Barrel - Part 4",
-      "day": "1"
+      "day": "1",
+      "likes": 10
     },
     {
+      "id": 26,
       "month": "1",
       "num": 26,
       "link": "",
@@ -336,9 +387,11 @@
       "alt": "That cat has some serious periodic components",
       "img": "https://imgs.xkcd.com/comics/fourier.jpg",
       "title": "Fourier",
-      "day": "1"
+      "day": "1",
+      "likes": 14
     },
     {
+      "id": 27,
       "month": "1",
       "num": 27,
       "link": "",
@@ -349,9 +402,11 @@
       "alt": "Disgusting",
       "img": "https://imgs.xkcd.com/comics/meat_cereals.jpg",
       "title": "Meat Cereals",
-      "day": "1"
+      "day": "1",
+      "likes": 6
     },
     {
+      "id": 28,
       "month": "1",
       "num": 28,
       "link": "",
@@ -362,9 +417,11 @@
       "alt": "Hell if I know",
       "img": "https://imgs.xkcd.com/comics/elefino.jpg",
       "title": "Elefino",
-      "day": "1"
+      "day": "1",
+      "likes": 18
     },
     {
+      "id": 29,
       "month": "1",
       "num": 29,
       "link": "",
@@ -375,9 +432,11 @@
       "alt": "So he's saying that God thought Hitler's art was so bad that the Holocaust was an acceptable alternative.  It's no secret that the hat guy is closely based on Aram, from Men in Hats.",
       "img": "https://imgs.xkcd.com/comics/hitler.jpg",
       "title": "Hitler",
-      "day": "1"
+      "day": "1",
+      "likes": 20
     },
     {
+      "id": 30,
       "month": "1",
       "num": 30,
       "link": "",
@@ -388,7 +447,8 @@
       "alt": "Some people haven't heard of the Donner Party.  They were pioneers who got stranded and likely resorted to cannibalism.",
       "img": "https://imgs.xkcd.com/comics/donner.jpg",
       "title": "Donner",
-      "day": "1"
+      "day": "1",
+      "likes": 13
     }
   ]
 }
