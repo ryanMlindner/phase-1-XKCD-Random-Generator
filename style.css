@@ -60,6 +60,14 @@ body.dark{
   width: 100%;
 }
 
+.right-grid:hover {
+  cursor: pointer;
+}
+
+.right-grid li:hover{
+  background-color: cadetblue;
+}
+
 .text-display{
   color:gray;
 }
